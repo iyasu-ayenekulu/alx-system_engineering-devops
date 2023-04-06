@@ -40,7 +40,7 @@ frontend  e-yasu.tech
         default_backend  e-yasu.tech-backend
 
 frontend e-yasu.tech
-	bind *:443 ssl crt /etc/haproxy/certs/www.e-yasu.tech.com
+	bind *:443 ssl crt /etc/haproxy/certs/www.e-yasu.tech.pem
 	http-request set-header X-Forwarded-Proto https
 	default_backend e-yasu.tech-backend
 
